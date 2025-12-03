@@ -77,7 +77,28 @@ Stores **only**:
 
 5. **Receive & decrypt**  
    - Recipient fetches encrypted envelopes  
-   - ACA-Py decrypts them on `/unpack` request  
+   - ACA-Py decrypts them on `/unpack` request
+
+
+
+  
+
+##  Run the DID UI Demo
+  
+To run the demo UI:
+
+```bash
+git clone https://github.com/ZentrixLab/did-messaging-api.git
+cd did-messaging-api
+
+python3 -m venv venv
+source venv/bin/activate   # on Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+
+streamlit run did_ui.py
+
+
 
 ---
 ## Useful Links
